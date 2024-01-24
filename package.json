@@ -4,12 +4,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "prepare": "husky install",
+    "dev": "next dev",
+    "format": "prettier --write .",
     "lint": "next lint",
-    "format": "prettier --write ."
+    "prepare": "husky install",
+    "start": "next start"
   },
   "dependencies": {
     "next": "14.1.0",
