@@ -37,5 +37,13 @@
     "prettier-plugin-tailwindcss": "^0.5.11",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.3.3"
+  },
+  "packageManager": "npm@10.1.0",
+  "engines": {
+    "bun": "Please use npm",
+    "node": "20.9.*",
+    "npm": "10.1.*",
+    "pnpm": "Please use npm",
+    "yarn": "Please use npm"
   }
 }
