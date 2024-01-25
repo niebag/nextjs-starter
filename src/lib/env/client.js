@@ -1,5 +1,11 @@
 import { createEnv } from '@t3-oss/env-nextjs';
 
+/**
+ * While defining both the client and server schemas in a single file provides the best developer experience,
+ * it also means that your validation schemas for the server variables will be shipped to the client.
+ * With that reason, both client and server schemas are defined in separate files.
+ */
+
 export const env = createEnv({
 	/**
 	 * Specify your client-side environment variables schema here. This way you can ensure the app
