@@ -39,12 +39,11 @@
 		"tailwindcss": "^3.4.1",
 		"typescript": "^5.3.3"
 	},
-	"packageManager": "npm@10.1.0",
 	"engines": {
-		"bun": "Please use npm",
+		"bun": "1.0.*",
 		"node": "20.9.*",
-		"npm": "10.1.*",
-		"pnpm": "Please use npm",
-		"yarn": "Please use npm"
+		"npm": "Please use bun",
+		"pnpm": "Please use bun",
+		"yarn": "Please use bun"
 	}
 }
