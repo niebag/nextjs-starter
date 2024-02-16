@@ -2,15 +2,17 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+First, make sure your system has the [Bun](https://bun.sh/) toolkit installed. If not, please refer to the [installation guide](https://bun.sh/docs/installation).
+
+Then, clone this repository:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
+bun install
+```
+
+Then, run the development server:
+
+```bash
 bun dev
 ```
 
