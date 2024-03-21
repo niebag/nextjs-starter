@@ -1,6 +1,6 @@
 {
-  "name": "sanity-core",
-  "version": "0.1.0",
+  "name": "nextjs-app-boilerplate",
+  "version": "0.0.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -9,17 +9,23 @@
     "format": "prettier --write .",
     "lint": "next lint",
     "prepare": "husky install",
-    "start": "next start"
+    "start": "next start",
+    "test": "playwright test",
+    "test:codegen": "playwright codegen",
+    "test:debug": "playwright test --debug",
+    "test:interactive": "playwright test --ui"
   },
   "dependencies": {
     "@t3-oss/env-nextjs": "^0.9.2",
     "next": "^14.1.4",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.2.1",
     "@commitlint/config-conventional": "^19.1.0",
+    "@playwright/test": "^1.42.1",
     "@types/eslint": "^8.56.6",
     "@types/lint-staged": "^13.3.0",
     "@types/node": "^20.11.30",
@@ -40,10 +46,10 @@
     "typescript": "^5.4.3"
   },
   "engines": {
-    "bun": "1.0.*",
+    "bun": "Please use pnpm",
     "node": "20.9.*",
-    "npm": "Please use bun",
-    "pnpm": "Please use bun",
-    "yarn": "Please use bun"
+    "npm": "Please use pnpm",
+    "pnpm": "8.15.*",
+    "yarn": "Please use pnpm"
   }
 }

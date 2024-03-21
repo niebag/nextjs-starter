@@ -2,18 +2,18 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, make sure your system has the [Bun](https://bun.sh/) toolkit installed. If not, please refer to the [installation guide](https://bun.sh/docs/installation).
+First, make sure your system has the [PNPM](https://pnpm.io/) package manager installed. If not, please refer to the [installation guide](https://pnpm.io/installation).
 
 Then, clone this repository:
 
 ```bash
-bun install
+pnpm install
 ```
 
 Then, run the development server:
 
 ```bash
-bun dev
+pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
