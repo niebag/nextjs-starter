@@ -47,9 +47,9 @@
   },
   "engines": {
     "bun": "Please use pnpm",
-    "node": "20.9.*",
+    "node": "20.*.*",
     "npm": "Please use pnpm",
-    "pnpm": "8.15.*",
+    "pnpm": "8.*.*",
     "yarn": "Please use pnpm"
   }
 }
