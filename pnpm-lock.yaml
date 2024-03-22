@@ -28,6 +28,9 @@ devDependencies:
   '@commitlint/config-conventional':
     specifier: ^19.1.0
     version: 19.1.0
+  '@commitlint/types':
+    specifier: ^19.0.3
+    version: 19.0.3
   '@playwright/test':
     specifier: ^1.42.1
     version: 1.42.1
