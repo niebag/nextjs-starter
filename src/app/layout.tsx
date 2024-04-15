@@ -2,6 +2,7 @@ import { HighlightInit } from '@highlight-run/next/client';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
+import { ScreenSize } from '~/components/atoms/utils/screen-size';
 import { env } from '~/env';
 import './globals.css';
 
@@ -19,6 +20,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<>
+			{/* Init Highlight.io */}
 			<HighlightInit
 				projectId={env.HIGHLIGHT_PROJECT_ID}
 				serviceName={env.HIGHLIGHT_SERVICE_NAME}
@@ -31,7 +33,13 @@ export default function RootLayout({
 			/>
 
 			<html lang='en'>
-				<body className={inter.className}>{children}</body>
+				<body className={inter.className}>
+					{children}
+
+					{/*	In development mode, render a fixed component displaying the current viewport 
+						width and corresponding Tailwind breakpoint, as a helper for responsive design. */}
+					{env.NODE_ENV === 'development' && <ScreenSize />}
+				</body>
 			</html>
 		</>
 	);
