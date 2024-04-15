@@ -16,7 +16,7 @@ const config = {
 
 	/* Config for prettier-plugin-tailwindcss */
 	tailwindConfig: './tailwind.config.ts', // Path to the Tailwind config file.
-	tailwindFunctions: [] // List of custom function and tag names that contain classes.
+	tailwindFunctions: ['cn', 'cva'] // List of custom function and tag names that contain classes.
 };
 
 export default config;
