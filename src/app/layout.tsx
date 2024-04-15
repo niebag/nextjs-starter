@@ -1,5 +1,8 @@
+import { HighlightInit } from '@highlight-run/next/client';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+
+import { env } from '~/env';
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -15,8 +18,21 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang='en'>
-			<body className={inter.className}>{children}</body>
-		</html>
+		<>
+			<HighlightInit
+				projectId={env.HIGHLIGHT_PROJECT_ID}
+				serviceName={env.HIGHLIGHT_SERVICE_NAME}
+				tracingOrigins
+				networkRecording={{
+					enabled: true,
+					recordHeadersAndBody: true,
+					urlBlocklist: []
+				}}
+			/>
+
+			<html lang='en'>
+				<body className={inter.className}>{children}</body>
+			</html>
+		</>
 	);
 }

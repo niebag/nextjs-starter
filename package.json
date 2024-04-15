@@ -16,6 +16,7 @@
     "test:interactive": "playwright test --ui"
   },
   "dependencies": {
+    "@highlight-run/next": "^7.4.13",
     "@t3-oss/env-nextjs": "~0.9",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
