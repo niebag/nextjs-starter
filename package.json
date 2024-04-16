@@ -11,7 +11,7 @@
 		"prepare": "husky install",
 		"start": "next start",
 		"storybook": "storybook dev -p 6006",
-		"storybook:build": "storybook build",
+		"storybook:build": "SKIP_ENV_VALIDATION=1 storybook build",
 		"storybook:test": "test-storybook --browsers chromium firefox webkit",
 		"test": "playwright test",
 		"test:codegen": "playwright codegen",
