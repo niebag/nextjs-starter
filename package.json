@@ -7,18 +7,27 @@
 		"build": "next build",
 		"dev": "next dev --turbo",
 		"format": "prettier --write .",
+		"jest:test": "SKIP_ENV_VALIDATION=1 jest",
+		"jest:watch": "jest --watch",
 		"lint": "next lint",
-		"prepare": "husky install",
-		"start": "next start",
-		"storybook": "storybook dev -p 6006",
-		"storybook:build": "SKIP_ENV_VALIDATION=1 storybook build",
-		"storybook:test": "test-storybook --browsers chromium firefox webkit",
 		"playwright:test": "playwright test",
 		"playwright:test:codegen": "playwright codegen",
 		"playwright:test:debug": "playwright test --debug",
 		"playwright:test:interactive": "playwright test --ui",
-		"jest:test": "SKIP_ENV_VALIDATION=1 jest",
-		"jest:watch": "jest --watch"
+		"prepare": "husky install",
+		"start": "next start",
+		"storybook": "storybook dev -p 6006",
+		"storybook:build": "SKIP_ENV_VALIDATION=1 storybook build",
+		"storybook:test": "test-storybook --browsers chromium firefox webkit"
+	},
+	"jest-junit": {
+		"ancestorSeparator": " › ",
+		"classNameTemplate": "{classname}",
+		"outputDirectory": "reports",
+		"outputName": "jest-junit.xml",
+		"suiteNameTemplate": "{filepath}",
+		"titleTemplate": "{title}",
+		"uniqueOutputName": "false"
 	},
 	"dependencies": {
 		"@highlight-run/next": "~7.4",
@@ -77,14 +86,5 @@
 		"npm": "Please use pnpm",
 		"pnpm": "9.*.*",
 		"yarn": "Please use pnpm"
-	},
-	"jest-junit": {
-		"outputDirectory": "reports",
-		"outputName": "jest-junit.xml",
-		"ancestorSeparator": " › ",
-		"uniqueOutputName": "false",
-		"suiteNameTemplate": "{filepath}",
-		"classNameTemplate": "{classname}",
-		"titleTemplate": "{title}"
 	}
 }

@@ -42,10 +42,7 @@ const config = {
 	// coverageProvider: 'v8',
 
 	// A list of reporter names that Jest uses when writing coverage reports
-	coverageReporters: [
-	  "json",
-	  "json-summary"
-	],
+	coverageReporters: ['json', 'json-summary'],
 
 	// An object that configures minimum threshold enforcement for coverage results
 	// coverageThreshold: undefined,
@@ -77,10 +74,7 @@ const config = {
 	// maxWorkers: "50%",
 
 	// An array of directory names to be searched recursively up from the requiring module's location
-	moduleDirectories: [
-	  "node_modules",
-	  "<rootDir>/"
-	],
+	moduleDirectories: ['node_modules', '<rootDir>/'],
 
 	// An array of file extensions your modules use
 	// moduleFileExtensions: [
@@ -96,7 +90,7 @@ const config = {
 
 	// A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
 	moduleNameMapper: {
-		'^~/(.*)$': '<rootDir>/$1',
+		'^~/(.*)$': '<rootDir>/$1'
 	},
 
 	// An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
@@ -115,10 +109,7 @@ const config = {
 	// projects: undefined,
 
 	// Use this configuration option to add custom reporters to Jest
-	reporters: [
-		'default',
-		'jest-junit',
-	],
+	reporters: ['default', 'jest-junit'],
 
 	// Automatically reset mock state before every test
 	// resetMocks: false,
@@ -165,9 +156,7 @@ const config = {
 	// testLocationInResults: false,
 
 	// The glob patterns Jest uses to detect test files
-	testMatch: [
-	  "**/__tests__/*.test.mjs",
-	],
+	testMatch: ['**/__tests__/*.test.mjs']
 
 	// An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
 	// testPathIgnorePatterns: [
