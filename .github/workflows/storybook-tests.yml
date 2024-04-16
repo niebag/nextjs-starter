@@ -19,4 +19,4 @@ jobs:
               run: |
                   pnpx concurrently -k -s first -n "SB,TEST" -c "magenta,blue" \
                     "pnpx http-server storybook-static --port 6006 --silent" \
-                    "pnpx wait-on tcp:6006 && pnpm storybook:test"
+                    "pnpx wait-on tcp:6006 && SKIP_ENV_VALIDATION=1 pnpm storybook:test"
