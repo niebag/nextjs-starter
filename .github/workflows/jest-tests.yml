@@ -1,4 +1,4 @@
-name: Playwright Tests
+name: Jest Tests
 
 on:
     push:
@@ -15,13 +15,12 @@ jobs:
                   node-version-file: '.nvmrc'
             - name: Install dependencies
               run: npm install -g pnpm && pnpm install
-            - name: Install Playwright Browsers
-              run: pnpm exec playwright install --with-deps
-            - name: Run Playwright tests
-              run: pnpm exec playwright test
-            - uses: actions/upload-artifact@v4
+            - name: Run Jest tests
+              run: pnpm jest:test --ci --reporters=default --reporters=jest-junit
+            - name: Test Report
+              uses: dorny/test-reporter@v1
               if: success() || failure()
               with:
-                  name: playwright-report
-                  path: playwright-report/
-                  retention-days: 30
+                  name: JEST Tests
+                  path: reports/jest-*.xml
+                  reporter: jest-junit
