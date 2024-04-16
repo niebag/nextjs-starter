@@ -70,7 +70,7 @@
 		"bun": "Please use pnpm",
 		"node": "20.*.*",
 		"npm": "Please use pnpm",
-		"pnpm": "8.*.*",
+		"pnpm": "9.*.*",
 		"yarn": "Please use pnpm"
 	}
 }
