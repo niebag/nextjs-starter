@@ -1,4 +1,4 @@
-import { ResourceCard } from '../../molecules/cards/resource-card';
+import { ResourceCard } from '../../../molecules/cards/ResourceCard';
 
 export function ResourceSection() {
 	return (

@@ -29,6 +29,6 @@
 			"~/*": ["./src/*"]
 		}
 	},
-	"include": [".eslintrc.cjs", "next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.cjs", "**/*.js", "**/*.mjs", ".next/types/**/*.ts"],
+	"include": [".eslintrc.cjs", "next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.cjs", "**/*.js", "**/*.mjs", ".next/types/**/*.ts", "src/components/atoms/icons/ArrowIcon"],
 	"exclude": ["node_modules"]
 }

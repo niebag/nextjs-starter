@@ -1,5 +1,5 @@
-import { CreatorCredit } from '~/components/molecules/blocks/creator-credit';
-import { GetStarted } from '~/components/molecules/blocks/get-started';
+import { CreatorCredit } from '~/components/molecules/blocks/CreatorCredit';
+import { GetStarted } from '~/components/molecules/blocks/GetStarted';
 
 export function HeaderSection() {
 	return (

@@ -8,7 +8,8 @@ const config = {
 	extends: [
 		'plugin:@next/next/recommended',
 		'plugin:@typescript-eslint/recommended-type-checked',
-		'plugin:@typescript-eslint/stylistic-type-checked'
+		'plugin:@typescript-eslint/stylistic-type-checked',
+		'plugin:storybook/recommended'
 	],
 	rules: {
 		// These opinionated rules are enabled in stylistic-type-checked above.

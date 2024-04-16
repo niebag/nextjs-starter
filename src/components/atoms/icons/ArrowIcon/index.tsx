@@ -10,7 +10,7 @@ export function ArrowIcon({ direction, className, ...props }: Props) {
 	const arrow = direction === 'left' ? '<-' : '->';
 
 	return (
-		<span className={cn('inline-block', className)} {...props}>
+		<span data-testid='arrow-icon' className={cn('inline-block', className)} {...props}>
 			{arrow}
 		</span>
 	);
