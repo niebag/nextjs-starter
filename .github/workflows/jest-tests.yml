@@ -1,4 +1,4 @@
-name: Playwright Tests
+name: Jest Tests
 
 on:
     push:
@@ -17,7 +17,5 @@ jobs:
                   node-version-file: '.nvmrc'
             - name: Install dependencies
               run: npm install -g pnpm && pnpm install
-            - name: Install Playwright Browsers
-              run: pnpm exec playwright install --with-deps
-            - name: Run Playwright tests
-              run: pnpm exec playwright test
+            - name: Run Jest tests
+              run: pnpm jest:test --ci --reporters=default --reporters=jest-junit
