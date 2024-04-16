@@ -2,9 +2,10 @@ import { HighlightInit } from '@highlight-run/next/client';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
-import { ScreenSize } from '~/components/atoms/utils/screen-size';
+import { ScreenSize } from '~/components/atoms/utils/ScreenSize';
 import { env } from '~/env';
-import './globals.css';
+import '~/styles/globals.css';
+import '~/styles/tailwind.css';
 
 const inter = Inter({ subsets: ['latin'] });
 

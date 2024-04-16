@@ -1,5 +1,5 @@
-import { ArrowIcon } from '../../atoms/icons/arrow-icon';
-import { Heading } from '../../atoms/typography/heading';
+import { ArrowIcon } from '~/components/atoms/icons/ArrowIcon';
+import { Heading } from '~/components/atoms/typography/Heading';
 
 type Props = {
 	title: string;
@@ -11,7 +11,7 @@ export function ResourceCard({ title, description, link }: Props) {
 	return (
 		<a
 			href={link}
-			className='group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30'
+			className='group flex flex-col items-center justify-center rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30'
 			target='_blank'
 			rel='noopener noreferrer'>
 			<Heading className='mb-3' level={2}>

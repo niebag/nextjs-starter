@@ -1,4 +1,4 @@
-import { Code } from '~/components/atoms/typography/code';
+import { Code } from '~/components/atoms/typography/Code';
 
 export function GetStarted() {
 	return (

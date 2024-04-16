@@ -1,6 +1,6 @@
-import { HeaderSection } from '~/components/organisms/sections/header-section';
-import { LogoSection } from '~/components/organisms/sections/logo-section';
-import { ResourceSection } from '~/components/organisms/sections/resource-section';
+import { HeaderSection } from '~/components/organisms/sections/HeaderSection';
+import { LogoSection } from '~/components/organisms/sections/LogoSection';
+import { ResourceSection } from '~/components/organisms/sections/ResourceSection';
 
 export default function Home() {
 	return (

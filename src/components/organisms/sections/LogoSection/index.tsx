@@ -1,4 +1,4 @@
-import { NextJSLogo } from '~/components/atoms/logos/nextjs-logo';
+import { NextJSLogo } from '~/components/atoms/logos/NextJSLogo';
 
 export function LogoSection() {
 	return (

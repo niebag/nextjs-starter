@@ -9,6 +9,12 @@ import { cn } from '~/lib/utils';
 type Props = Omit<ImageProps, 'src' | 'alt'>;
 
 export function NextJSLogo({ className, ...props }: Props) {
-	return <Image {...props} 					src='/next.svg'
-    alt='Next.js Logo' className={cn('dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert', className)} />;
+	return (
+		<Image
+			{...props}
+			src='/next.svg'
+			alt='Next.js Logo'
+			className={cn('dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert', className)}
+		/>
+	);
 }
