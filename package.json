@@ -14,7 +14,7 @@
 		"playwright:test:codegen": "playwright codegen",
 		"playwright:test:debug": "playwright test --debug",
 		"playwright:test:interactive": "playwright test --ui",
-		"prepare": "husky install",
+		"prepare": "husky",
 		"start": "next start",
 		"storybook": "storybook dev -p 6006",
 		"storybook:build": "SKIP_ENV_VALIDATION=1 storybook build",
