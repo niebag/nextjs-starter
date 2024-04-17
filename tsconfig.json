@@ -38,7 +38,6 @@
 		"**/*.js",
 		"**/*.mjs",
 		".next/types/**/*.ts",
-		"src/components/atoms/icons/ArrowIcon"
 	],
 	"exclude": ["node_modules"]
 }
