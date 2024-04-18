@@ -1,4 +1,62 @@
+<p align="center">
+  <a href="https://nextjs.org">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./public/next-light.svg">
+      <img src="./public/next.svg" width="256">
+    </picture>
+    <br />
+    <br />
+    <h1 align="center">Next.js Starter</h1>
+  </a>
+</p>
+
+<p align="center">
+  Launch your projects quickly with this <a href="https://nextjs.org/">Next.js</a> starter kit, which includes a carefully selected suite of tools to enhance the development lifecycle.
+</p>
+
+<p align="center">
+  <img src="https://github.com/niebag/nextjs-starter/actions/workflows/jest.yml/badge.svg" alt="Jest Tests">
+  <img src="https://github.com/niebag/nextjs-starter/actions/workflows/playwright.yml/badge.svg" alt="Playwright Tests">
+  <img src="https://github.com/niebag/nextjs-starter/actions/workflows/storybook.yml/badge.svg " alt="Storybook Test Runner">
+  <br />
+  <br />
+</p>
+
+## What is this repo?
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This repository is equipped with a suite of opinionated tools to streamline the development, testing, and deployment phases of your application.
+
+These tools are selected to enhance the foundational `create-next-app` setup. For example, the base homepage is broken down into components based on the Atomic Design method, and each of these components is represented in Storybook for easier development and testing. Read more about the included tools in the [Opinionated Tools Included](#opinionated-tools-included) section.
+
+It's important to note that this setup does not include project-specific tooling such as authentication or database integration, as those choices depend heavily on the individual project requirements.
+
+## Table Of Contents
+
+<!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
+
+-   [Opinionated Tools Included](#opinionated-tools-included)
+-   [Getting Started](#getting-started)
+-   [Learn More](#learn-more)
+-   [Deploy on Vercel](#deploy-on-vercel)
+
+<!-- TOC end -->
+
+## Opinionated Tools Included
+
+-   **[PNPM](https://pnpm.io/)**: A fast, disk space-efficient package manager.
+-   **[Storybook](https://storybook.js.org/)**: Integrated directly into the project for building UI components in isolation.
+-   **[Jest](https://jestjs.io/)**: Setup for unit and snapshot testing to ensure code reliability.
+-   **[Playwright](https://playwright.dev/)**: Configured for end-to-end testing, providing automated testing capabilities across various browsers.
+-   **[GitHub Actions](https://github.com/features/actions)**: Automated workflows for _Storybook_, _Jest_, and _Playwright_ to ensure that your builds are tested before deployment.
+-   **[t3-env](https://env.t3.gg/)**: Validate and transform your environment variables with the full power of _[Zod](https://zod.dev/)_.
+-   **[Plop](https://plopjs.com/)**: A micro-generator to help you maintain code standards and speed up repetitive tasks.
+-   **[Atomic Design](https://bradfrost.com/blog/post/atomic-web-design/)**: Methodology included for organizing components effectively.
+-   **[ESLint](https://eslint.org/)**: Linting rules to ensure code consistency and quality.
+-   **[Prettier](https://prettier.io/)**: Code formatting rules to ensure code consistency and quality.
+-   **Git Hooks (using [Husky](https://typicode.github.io/husky/))**: Ensures code standards and runs tests pre-commit and pre-push.
+    -   **[Commitlint](https://commitlint.js.org/)**: Ensures commit messages meet the [conventional commits](https://www.conventionalcommits.org/) format.
+    -   **[Lint-staged](https://www.npmjs.com/package/lint-staged)**: Lints and formats staged files before committing using the project's _ESLint_ and _Prettier_ rules.
 
 ## Getting Started
 
