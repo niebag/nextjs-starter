@@ -1,4 +1,3 @@
-import { HighlightInit } from '@highlight-run/next/client';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
@@ -20,28 +19,14 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<>
-			{/* Init Highlight.io */}
-			<HighlightInit
-				projectId={env.HIGHLIGHT_PROJECT_ID}
-				serviceName={env.HIGHLIGHT_SERVICE_NAME}
-				tracingOrigins
-				networkRecording={{
-					enabled: true,
-					recordHeadersAndBody: true,
-					urlBlocklist: []
-				}}
-			/>
+		<html lang='en'>
+			<body className={inter.className}>
+				{children}
 
-			<html lang='en'>
-				<body className={inter.className}>
-					{children}
-
-					{/*	In development mode, render a fixed component displaying the current viewport 
+				{/*	In development mode, render a fixed component displaying the current viewport 
 						width and corresponding Tailwind breakpoint, as a helper for responsive design. */}
-					{env.NODE_ENV === 'development' && <ScreenSize />}
-				</body>
-			</html>
-		</>
+				{env.NODE_ENV === 'development' && <ScreenSize />}
+			</body>
+		</html>
 	);
 }

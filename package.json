@@ -31,7 +31,6 @@
 		"uniqueOutputName": "false"
 	},
 	"dependencies": {
-		"@highlight-run/next": "~7.4",
 		"@t3-oss/env-nextjs": "~0.9",
 		"class-variance-authority": "~0.7",
 		"clsx": "~2.1",

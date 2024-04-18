@@ -16,11 +16,7 @@ export const env = createEnv({
 	 * isn't built with invalid env vars.
 	 */
 	server: {
-		NODE_ENV: z.enum(['development', 'test', 'production']).default('development'),
-
-		// Highlight.io
-		HIGHLIGHT_PROJECT_ID: z.string(),
-		HIGHLIGHT_SERVICE_NAME: z.string()
+		NODE_ENV: z.enum(['development', 'test', 'production']).default('development')
 	},
 
 	/**
@@ -32,11 +28,7 @@ export const env = createEnv({
 		// NEXT_PUBLIC_CLIENT_VAR: process.env.NEXT_PUBLIC_CLIENT_VAR
 
 		/* Server */
-		NODE_ENV: process.env.NODE_ENV,
-
-		// Highlight.io
-		HIGHLIGHT_PROJECT_ID: process.env.HIGHLIGHT_PROJECT_ID,
-		HIGHLIGHT_SERVICE_NAME: process.env.HIGHLIGHT_SERVICE_NAME
+		NODE_ENV: process.env.NODE_ENV
 	},
 
 	/**
