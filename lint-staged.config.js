@@ -19,7 +19,7 @@ function prettier(filenames) {
 }
 
 const config = {
-	'*.{ts,tsx,cjs,js}': [lint, prettier]
+	'*.{ts,tsx,cjs,js,mjs}': [lint, prettier]
 };
 
 export default config;
