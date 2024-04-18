@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
+import { IS_DEVELOPMENT } from 'next.constants.mjs';
 import { Inter } from 'next/font/google';
 
 import { ScreenSize } from '~/components/atoms/utils/ScreenSize';
-import { env } from '~/env';
 import '~/styles/globals.css';
 import '~/styles/tailwind.css';
 
@@ -24,8 +24,8 @@ export default function RootLayout({
 				{children}
 
 				{/*	In development mode, render a fixed component displaying the current viewport 
-						width and corresponding Tailwind breakpoint, as a helper for responsive design. */}
-				{env.NODE_ENV === 'development' && <ScreenSize />}
+					width and corresponding Tailwind breakpoint, as a helper for responsive design. */}
+				{IS_DEVELOPMENT && <ScreenSize />}
 			</body>
 		</html>
 	);
