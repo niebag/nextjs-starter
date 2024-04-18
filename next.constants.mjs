@@ -1,6 +1,6 @@
 'use strict';
 
-import { env } from "~/env";
+import { env } from '~/env';
 
 /**
  * This is used to verify if the current site is running on a development environment.

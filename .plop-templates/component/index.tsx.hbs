@@ -1,15 +1,6 @@
-import * as React from 'react';
-
-import { cn } from '~/lib/utils';
-
-type Props = {
-    className?: string;
-};
-
-export function {{pascalCase name}}({ className, ...props }: Props) {
-	return (
-		<div data-testid='{{snakeCase name}}' className={cn('', className)}>
-			Hello, world!
-		</div>
-	);
-}
+import * as React from 'react'; import { cn } from '~/lib/utils'; type Props = { className?: string; }; export function
+{{pascalCase name}}({ className, ...props }: Props) { return (
+<div data-testid='{{snakeCase name}}' className="{cn(''," className)}>
+	Hello, world!
+</div>
+); }
