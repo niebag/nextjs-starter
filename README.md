@@ -45,6 +45,7 @@ It's important to note that this setup does not include project-specific tooling
 ## Opinionated Tools Included
 
 -   **[PNPM](https://pnpm.io/)**: A fast, disk space-efficient package manager.
+-   **[Turbopack](https://turbo.build/pack)** Provides a fast and flexible development experience for apps of any size using incremental behavior and adaptable bundling strategies.
 -   **[Storybook](https://storybook.js.org/)**: Integrated directly into the project for building UI components in isolation.
 -   **[Jest](https://jestjs.io/)**: Setup for unit and snapshot testing to ensure code reliability.
 -   **[Playwright](https://playwright.dev/)**: Configured for end-to-end testing, providing automated testing capabilities across various browsers.
