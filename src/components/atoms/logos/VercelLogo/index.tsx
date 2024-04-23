@@ -13,7 +13,7 @@ import { cn } from '~/lib/utils';
 type VercelLogoProps = Omit<ImageProps, 'src' | 'alt'>;
 
 export function VercelLogo({ className, ...props }: VercelLogoProps) {
-	/* JSX */
+    /* JSX */
 
-	return <Image {...props} src='/vercel.svg' alt='Vercel Logo' className={cn('dark:invert', className)} />;
+    return <Image {...props} src='/vercel.svg' alt='Vercel Logo' className={cn('dark:invert', className)} />;
 }

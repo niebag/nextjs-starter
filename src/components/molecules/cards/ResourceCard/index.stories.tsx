@@ -14,9 +14,9 @@ type ResourceCardMeta = Meta<typeof ResourceCard>;
  * Displays a resource card with a title, description, and link.
  */
 const meta = {
-	component: ResourceCard,
-	tags: ['autodocs'],
-	title: 'Molecules/Cards/ResourceCard'
+    component: ResourceCard,
+    tags: ['autodocs'],
+    title: 'Molecules/Cards/ResourceCard'
 } satisfies ResourceCardMeta;
 export default meta;
 
@@ -34,25 +34,25 @@ type ResourceCardStory = StoryObj<typeof meta>;
  * Default resource card.
  */
 export const Default = {
-	args: {
-		title: 'Docs',
-		description: 'Find in-depth information about Next.js features and API.',
-		link: 'https://nextjs.org/docs'
-	}
+    args: {
+        title: 'Docs',
+        description: 'Find in-depth information about Next.js features and API.',
+        link: 'https://nextjs.org/docs'
+    }
 } satisfies ResourceCardStory;
 
 /**
  * Resource card with hover state.
  */
 export const Hover = {
-	args: {
-		title: 'Docs',
-		description: 'Find in-depth information about Next.js features and API.',
-		link: 'https://nextjs.org/docs'
-	},
-	parameters: {
-		pseudo: {
-			hover: true
-		}
-	}
+    args: {
+        title: 'Docs',
+        description: 'Find in-depth information about Next.js features and API.',
+        link: 'https://nextjs.org/docs'
+    },
+    parameters: {
+        pseudo: {
+            hover: true
+        }
+    }
 } satisfies ResourceCardStory;

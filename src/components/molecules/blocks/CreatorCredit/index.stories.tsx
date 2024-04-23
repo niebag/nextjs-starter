@@ -14,9 +14,9 @@ type CreatorCreditMeta = Meta<typeof CreatorCredit>;
  * Displays the creator credit for the content.
  */
 const meta = {
-	component: CreatorCredit,
-	tags: ['autodocs'],
-	title: 'Molecules/Blocks/CreatorCredit'
+    component: CreatorCredit,
+    tags: ['autodocs'],
+    title: 'Molecules/Blocks/CreatorCredit'
 } satisfies CreatorCreditMeta;
 export default meta;
 

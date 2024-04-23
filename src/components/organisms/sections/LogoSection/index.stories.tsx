@@ -14,9 +14,9 @@ type LogoSectionMeta = Meta<typeof LogoSection>;
  * Section with a centered Next.js logo.
  */
 const meta = {
-	component: LogoSection,
-	tags: ['autodocs'],
-	title: 'Organisms/Sections/LogoSection'
+    component: LogoSection,
+    tags: ['autodocs'],
+    title: 'Organisms/Sections/LogoSection'
 } satisfies LogoSectionMeta;
 export default meta;
 

@@ -14,9 +14,9 @@ type VercelLogoMeta = Meta<typeof VercelLogo>;
  * The Vercel logo
  */
 const meta = {
-	component: VercelLogo,
-	tags: ['autodocs'],
-	title: 'Atoms/Logos/VercelLogo'
+    component: VercelLogo,
+    tags: ['autodocs'],
+    title: 'Atoms/Logos/VercelLogo'
 } satisfies VercelLogoMeta;
 export default meta;
 
@@ -34,8 +34,8 @@ type VercelLogoStory = StoryObj<typeof meta>;
  * The default Vercel logo.
  */
 export const Default = {
-	args: {
-		width: 100,
-		height: 24
-	}
+    args: {
+        width: 100,
+        height: 24
+    }
 } satisfies VercelLogoStory;

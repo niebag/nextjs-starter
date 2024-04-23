@@ -1,9 +1,9 @@
 {
-	"recommendations": [
-		"ms-playwright.playwright",
-		"bradlc.vscode-tailwindcss",
-		"yoavbls.pretty-ts-errors",
-		"esbenp.prettier-vscode",
-		"dbaeumer.vscode-eslint"
-	]
+    "recommendations": [
+        "ms-playwright.playwright",
+        "bradlc.vscode-tailwindcss",
+        "yoavbls.pretty-ts-errors",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint"
+    ]
 }

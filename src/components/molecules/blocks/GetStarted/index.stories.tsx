@@ -15,9 +15,9 @@ type GetStartedMeta = Meta<typeof GetStarted>;
  * This component displays a call-to-action block to help users get started with the application.
  */
 const meta = {
-	component: GetStarted,
-	tags: ['autodocs'],
-	title: 'Molecules/Blocks/GetStarted'
+    component: GetStarted,
+    tags: ['autodocs'],
+    title: 'Molecules/Blocks/GetStarted'
 } satisfies GetStartedMeta;
 export default meta;
 

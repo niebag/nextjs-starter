@@ -8,8 +8,8 @@ import { cn } from '~/lib/utils';
 type CodeProps = React.HTMLAttributes<HTMLElement>;
 
 export const Code = forwardRef<HTMLElement, CodeProps>(({ className, ...props }, ref) => {
-	/* JSX */
+    /* JSX */
 
-	return <code ref={ref} className={cn('font-mono', className)} {...props} />;
+    return <code ref={ref} className={cn('font-mono', className)} {...props} />;
 });
 Code.displayName = 'Code';

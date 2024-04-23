@@ -15,9 +15,9 @@ type ScreenSizeMeta = Meta<typeof ScreenSize>;
  * This components displays the current screen size with its corresponding Tailwind CSS breakpoint.
  */
 const meta = {
-	component: ScreenSize,
-	tags: ['autodocs'],
-	title: 'Atoms/Utils/ScreenSize'
+    component: ScreenSize,
+    tags: ['autodocs'],
+    title: 'Atoms/Utils/ScreenSize'
 } satisfies ScreenSizeMeta;
 export default meta;
 
@@ -35,52 +35,52 @@ type ScreenSizeStory = StoryObj<typeof meta>;
  * Responsive screen size.
  */
 export const Responsive: ScreenSizeStory = {
-	parameters: {
-		viewport: { defaultViewport: 'responsive' }
-	}
+    parameters: {
+        viewport: { defaultViewport: 'responsive' }
+    }
 };
 
 /**
  * Small screen size. Minimum width: 640px
  */
 export const SM: ScreenSizeStory = {
-	parameters: {
-		viewport: { defaultViewport: 'sm' }
-	}
+    parameters: {
+        viewport: { defaultViewport: 'sm' }
+    }
 };
 
 /**
  * Medium screen size. Minimum width: 768px
  */
 export const MD: ScreenSizeStory = {
-	parameters: {
-		viewport: { defaultViewport: 'md' }
-	}
+    parameters: {
+        viewport: { defaultViewport: 'md' }
+    }
 };
 
 /**
  * Large screen size. Minimum width: 1024px
  */
 export const LG: ScreenSizeStory = {
-	parameters: {
-		viewport: { defaultViewport: 'lg' }
-	}
+    parameters: {
+        viewport: { defaultViewport: 'lg' }
+    }
 };
 
 /**
  * Extra large screen size. Minimum width: 1280px
  */
 export const XL: ScreenSizeStory = {
-	parameters: {
-		viewport: { defaultViewport: 'xl' }
-	}
+    parameters: {
+        viewport: { defaultViewport: 'xl' }
+    }
 };
 
 /**
  * Extra extra large screen size. Minimum width: 1536px
  */
 export const XXL: ScreenSizeStory = {
-	parameters: {
-		viewport: { defaultViewport: '2xl' }
-	}
+    parameters: {
+        viewport: { defaultViewport: '2xl' }
+    }
 };

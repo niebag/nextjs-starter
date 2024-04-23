@@ -6,20 +6,20 @@ type Direction = 'left' | 'right';
  * Props for the ArrowIcon component.
  */
 type ArrowIconProps = React.HTMLAttributes<HTMLSpanElement> & {
-	/** Direction of which the arrow should point to. */
-	direction: Direction;
+    /** Direction of which the arrow should point to. */
+    direction: Direction;
 };
 
 export function ArrowIcon({ direction, className, ...props }: ArrowIconProps) {
-	/* Constants */
+    /* Constants */
 
-	const arrow = direction === 'left' ? '<-' : '->';
+    const arrow = direction === 'left' ? '<-' : '->';
 
-	/* JSX */
+    /* JSX */
 
-	return (
-		<span data-testid='arrow-icon' className={cn('inline-block', className)} {...props}>
-			{arrow}
-		</span>
-	);
+    return (
+        <span data-testid='arrow-icon' className={cn('inline-block', className)} {...props}>
+            {arrow}
+        </span>
+    );
 }

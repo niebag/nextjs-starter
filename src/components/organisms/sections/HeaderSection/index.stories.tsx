@@ -14,9 +14,9 @@ type HeaderSectionMeta = Meta<typeof HeaderSection>;
  * Header section with a get started block and a creator credit block.
  */
 const meta = {
-	component: HeaderSection,
-	tags: ['autodocs'],
-	title: 'Organisms/Sections/HeaderSection'
+    component: HeaderSection,
+    tags: ['autodocs'],
+    title: 'Organisms/Sections/HeaderSection'
 } satisfies HeaderSectionMeta;
 export default meta;
 

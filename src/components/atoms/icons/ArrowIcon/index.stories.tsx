@@ -14,9 +14,9 @@ type ArrowIconMeta = Meta<typeof ArrowIcon>;
  * Arrow icon that can point to the left or right.
  */
 const meta = {
-	component: ArrowIcon,
-	tags: ['autodocs'],
-	title: 'Atoms/Icons/ArrowIcon'
+    component: ArrowIcon,
+    tags: ['autodocs'],
+    title: 'Atoms/Icons/ArrowIcon'
 } satisfies ArrowIconMeta;
 export default meta;
 
@@ -34,16 +34,16 @@ type ArrowIconStory = StoryObj<typeof meta>;
  * Arrow icon that points to the left.
  */
 export const LeftDirection = {
-	args: {
-		direction: 'left'
-	}
+    args: {
+        direction: 'left'
+    }
 } satisfies ArrowIconStory;
 
 /**
  * Arrow icon that points to the right.
  */
 export const RightDirection = {
-	args: {
-		direction: 'right'
-	}
+    args: {
+        direction: 'right'
+    }
 } satisfies ArrowIconStory;

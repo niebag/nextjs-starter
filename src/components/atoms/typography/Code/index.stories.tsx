@@ -14,9 +14,9 @@ type CodeMeta = Meta<typeof Code>;
  * Code block for displaying code snippets.
  */
 const meta = {
-	component: Code,
-	tags: ['autodocs'],
-	title: 'Atoms/Typography/Code'
+    component: Code,
+    tags: ['autodocs'],
+    title: 'Atoms/Typography/Code'
 } satisfies CodeMeta;
 export default meta;
 
@@ -34,7 +34,7 @@ type CodeStory = StoryObj<typeof meta>;
  * Default code block.
  */
 export const Default = {
-	args: {
-		children: 'src/app/page.tsx'
-	}
+    args: {
+        children: 'src/app/page.tsx'
+    }
 } satisfies CodeStory;

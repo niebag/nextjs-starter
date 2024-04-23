@@ -14,9 +14,9 @@ type NextJSLogoMeta = Meta<typeof NextJSLogo>;
  * The Next.js logo
  */
 const meta = {
-	component: NextJSLogo,
-	tags: ['autodocs'],
-	title: 'Atoms/Logos/NextJSLogo'
+    component: NextJSLogo,
+    tags: ['autodocs'],
+    title: 'Atoms/Logos/NextJSLogo'
 } satisfies NextJSLogoMeta;
 export default meta;
 
@@ -32,8 +32,8 @@ type NextJSLogoStory = StoryObj<typeof meta>;
  * The default Next.js logo.
  */
 export const Default = {
-	args: {
-		width: 180,
-		height: 37
-	}
+    args: {
+        width: 180,
+        height: 37
+    }
 } satisfies NextJSLogoStory;

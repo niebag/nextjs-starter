@@ -14,9 +14,9 @@ type ResourceSectionMeta = Meta<typeof ResourceSection>;
  * Section with a list of resources.
  */
 const meta = {
-	component: ResourceSection,
-	tags: ['autodocs'],
-	title: 'Organisms/Sections/ResourceSection'
+    component: ResourceSection,
+    tags: ['autodocs'],
+    title: 'Organisms/Sections/ResourceSection'
 } satisfies ResourceSectionMeta;
 export default meta;
 
