@@ -2,12 +2,35 @@ import type { Meta, StoryObj } from '@storybook/react';
 
 import { LogoSection } from '.';
 
+/**
+ * Meta information for the component.
+ * This object configures how the component will be displayed in the Storybook interface.
+ *
+ * @see https://storybook.js.org/docs/writing-stories#default-export
+ */
+type LogoSectionMeta = Meta<typeof LogoSection>;
+
+/**
+ * Section with a centered Next.js logo.
+ */
 const meta = {
-	title: 'Organisms/Sections/LogoSection',
-	component: LogoSection
-} satisfies Meta<typeof LogoSection>;
+	component: LogoSection,
+	tags: ['autodocs'],
+	title: 'Organisms/Sections/LogoSection'
+} satisfies LogoSectionMeta;
 export default meta;
 
-type Story = StoryObj<typeof meta>;
+/**
+ * Type definition for the stories.
+ * This type defines the expected structure for individual stories.
+ *
+ * @see https://storybook.js.org/docs/writing-stories#defining-stories
+ */
+type LogoSectionStory = StoryObj<typeof meta>;
 
-export const Default = {} satisfies Story;
+/* Stories */
+
+/**
+ * Default logo section.
+ */
+export const Default = {} satisfies LogoSectionStory;

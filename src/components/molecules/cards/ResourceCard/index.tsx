@@ -1,13 +1,23 @@
 import { ArrowIcon } from '~/components/atoms/icons/ArrowIcon';
 import { Heading } from '~/components/atoms/typography/Heading';
 
-type Props = {
+/**
+ * Props for the ArrowIcon component.
+ */
+type ResourceCardProps = {
+	/** Title of the card */
 	title: string;
+
+	/** Description of the card */
 	description: string;
+
+	/** Link to the resource */
 	link: string;
 };
 
-export function ResourceCard({ title, description, link }: Props) {
+export function ResourceCard({ title, description, link }: ResourceCardProps) {
+	/* JSX */
+
 	return (
 		<a
 			href={link}

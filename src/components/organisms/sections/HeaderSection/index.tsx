@@ -2,6 +2,8 @@ import { CreatorCredit } from '~/components/molecules/blocks/CreatorCredit';
 import { GetStarted } from '~/components/molecules/blocks/GetStarted';
 
 export function HeaderSection() {
+	/* JSX */
+
 	return (
 		<header className='z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex'>
 			<GetStarted />

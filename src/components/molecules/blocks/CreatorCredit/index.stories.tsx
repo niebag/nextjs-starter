@@ -2,12 +2,35 @@ import type { Meta, StoryObj } from '@storybook/react';
 
 import { CreatorCredit } from '.';
 
+/**
+ * Meta information for the component.
+ * This object configures how the component will be displayed in the Storybook interface.
+ *
+ * @see https://storybook.js.org/docs/writing-stories#default-export
+ */
+type CreatorCreditMeta = Meta<typeof CreatorCredit>;
+
+/**
+ * Displays the creator credit for the content.
+ */
 const meta = {
-	title: 'Molecules/Blocks/CreatorCredit',
-	component: CreatorCredit
-} satisfies Meta<typeof CreatorCredit>;
+	component: CreatorCredit,
+	tags: ['autodocs'],
+	title: 'Molecules/Blocks/CreatorCredit'
+} satisfies CreatorCreditMeta;
 export default meta;
 
-type Story = StoryObj<typeof meta>;
+/**
+ * Type definition for the stories.
+ * This type defines the expected structure for individual stories.
+ *
+ * @see https://storybook.js.org/docs/writing-stories#defining-stories
+ */
+type CreatorCreditStory = StoryObj<typeof meta>;
 
-export const Default = {} satisfies Story;
+/* Stories */
+
+/**
+ * Default creator credit.
+ */
+export const Default = {} satisfies CreatorCreditStory;

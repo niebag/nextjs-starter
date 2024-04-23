@@ -1,6 +1,8 @@
 import { VercelLogo } from '~/components/atoms/logos/VercelLogo';
 
 export function CreatorCredit() {
+	/* JSX */
+
 	return (
 		<a
 			data-testid='creator-credit'

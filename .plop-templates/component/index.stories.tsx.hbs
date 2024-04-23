@@ -2,12 +2,37 @@ import type { Meta, StoryObj } from '@storybook/react';
 
 import { {{pascalCase name}} } from '.';
 
+/**
+ * Meta information for the component.
+ * This object configures how the component will be displayed in the Storybook interface.
+ *
+ * @see https://storybook.js.org/docs/writing-stories#default-export
+ */
+type {{pascalCase name}}Meta = Meta<typeof {{pascalCase name}}>;
+
+/**
+ * This meta description below will be visible on the documentation page for the component.
+ */
 const meta = {
-	title: '{{pascalCase type}}/{{pascalCase subType}}/{{pascalCase name}}',
-	component: {{pascalCase name}}
-} satisfies Meta<typeof {{pascalCase name}}>;
+	component: {{pascalCase name}},
+	tags: ['autodocs'],
+	title: '{{titleCase type}}/{{titleCase subFolder}}/{{pascalCase name}}',
+} satisfies ;
 export default meta;
 
-type Story = StoryObj<typeof meta>;
+/**
+ * Type definition for the stories.
+ * This type defines the expected structure for individual stories.
+ *
+ * @see https://storybook.js.org/docs/writing-stories#defining-stories
+ */
+type {{pascalCase name}}Story = StoryObj<typeof meta>;
 
-export const Default = {} satisfies Story;
+/* Stories */
+
+/**
+ * This story description below will be visible on the documentation page for the component.
+ */
+export const Default = {} satisfies {{pascalCase name}}Story;
+
+// Write more stories here

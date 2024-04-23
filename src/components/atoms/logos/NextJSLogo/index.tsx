@@ -2,13 +2,17 @@ import Image, { type ImageProps } from 'next/image';
 
 import { cn } from '~/lib/utils';
 
-// We use Omit to create a new type that has all the properties of ImageProps
-// except for 'src' and 'alt'. This is because we're setting 'src' and 'alt'
-// directly in the NextJSLogo component, so we don't want TypeScript to require
-// them when we use the NextJSLogo component.
-type Props = Omit<ImageProps, 'src' | 'alt'>;
+/**
+ * Props for the NextJSLogo component.
+ *
+ * We use Omit to create a new type that has all the properties of ImageProps
+ * except for 'src' and 'alt'. This is because we're setting 'src' and 'alt'
+ * directly in the NextJSLogo component, so we don't want TypeScript to require
+ * them when we use the NextJSLogo component.
+ */
+type NextJSLogoProps = Omit<ImageProps, 'src' | 'alt'>;
 
-export function NextJSLogo({ className, ...props }: Props) {
+export function NextJSLogo({ className, ...props }: NextJSLogoProps) {
 	return (
 		<Image
 			{...props}

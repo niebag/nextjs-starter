@@ -1,11 +1,15 @@
-import * as React from 'react';
+import { forwardRef } from 'react';
 
 import { cn } from '~/lib/utils';
 
-type Props = React.HTMLAttributes<HTMLElement>;
+/**
+ * Props for the ArrowIcon component.
+ */
+type CodeProps = React.HTMLAttributes<HTMLElement>;
 
-export const Code = React.forwardRef<HTMLElement, Props>(({ className, ...props }, ref) => {
+export const Code = forwardRef<HTMLElement, CodeProps>(({ className, ...props }, ref) => {
+	/* JSX */
+
 	return <code ref={ref} className={cn('font-mono', className)} {...props} />;
 });
-
 Code.displayName = 'Code';

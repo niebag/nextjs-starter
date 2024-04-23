@@ -1,15 +1,19 @@
 'use client';
 
-import * as React from 'react';
+import { useEffect, useState } from 'react';
 
-/**
- * A fixed component displaying the current viewport width and corresponding Tailwind breakpoint, as a helper for responsive design.
- * Should only be rendered in development mode.
- */
 export function ScreenSize() {
-	const [dimensions, setDimensions] = React.useState({ width: 0, height: 0 });
+	/* State */
 
-	React.useEffect(() => {
+	const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
+
+	/* Derived State */
+
+	const { width, height } = dimensions;
+
+	/* Render */
+
+	useEffect(() => {
 		function updateDimensions() {
 			setDimensions({
 				width: window.innerWidth,
@@ -25,7 +29,7 @@ export function ScreenSize() {
 		};
 	}, []);
 
-	const { width, height } = dimensions;
+	/* JSX */
 
 	return (
 		<div className='fixed bottom-5 left-5 z-50 flex items-center space-x-2 rounded-full bg-black px-2.5 py-1 font-mono text-xs font-medium text-white'>

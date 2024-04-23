@@ -1,5 +1,5 @@
 import { cva, type VariantProps } from 'class-variance-authority';
-import * as React from 'react';
+import { forwardRef } from 'react';
 
 import { cn } from '~/lib/utils';
 
@@ -16,9 +16,14 @@ const headingVariants = cva('font-semibold', {
 	}
 });
 
-type Props = React.HTMLAttributes<HTMLHeadingElement> & VariantProps<typeof headingVariants>;
+/**
+ * Props for the Heading component.
+ */
+type HeadingProps = React.HTMLAttributes<HTMLHeadingElement> & VariantProps<typeof headingVariants>;
 
-export const Heading = React.forwardRef<HTMLHeadingElement, Props>(({ className, level = 1, ...props }, ref) => {
+export const Heading = forwardRef<HTMLHeadingElement, HeadingProps>(({ className, level = 1, ...props }, ref) => {
+	/* JSX */
+
 	switch (level) {
 		case 1:
 			return <h1 ref={ref} className={cn(headingVariants({ level }), className)} {...props} />;

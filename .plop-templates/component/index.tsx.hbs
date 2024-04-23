@@ -1,6 +1,21 @@
-import * as React from 'react'; import { cn } from '~/lib/utils'; type Props = { className?: string; }; export function
-{{pascalCase name}}({ className, ...props }: Props) { return (
-<div data-testid='{{snakeCase name}}' className="{cn(''," className)}>
-	Hello, world!
-</div>
-); }
+import { cn } from '~/lib/utils'; 
+
+/**
+ * Props for the {{pascalCase name}} component.
+ */
+type {{pascalCase name}}Props = { 
+	/** Optional additional class names for custom styling. */
+	className?: string;
+}; 
+
+export function {{pascalCase name}}({ className }: {{pascalCase name}}Props) { 
+	// Add more section comments here, e.g. "Constants", "State", "Hooks", "Derived State", "Utils", "Render", etc.
+
+	/* JSX */
+
+	return (
+		<div data-testid='{{snakeCase name}}' className={cn('', className)}>
+			Hello, {{pascalCase name}}!
+		</div>
+	);
+}
