@@ -12,6 +12,7 @@ const config = {
     bracketSpacing: true, // Print spaces between brackets in object literals.
     bracketSameLine: true, // Put the `>` of a multi-line JSX element at the end of the last line instead of being alone on the next line.
     printWidth: 120, // Specify the line length that the printer will wrap on.
+    endOfLine: 'lf', // Specify the end of line that the printer will use.
 
     /* Config for prettier-plugin-tailwindcss */
     tailwindConfig: './tailwind.config.ts', // Path to the Tailwind config file.
