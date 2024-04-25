@@ -4,7 +4,7 @@ const config = {
     parserOptions: {
         project: true
     },
-    plugins: ['@typescript-eslint'],
+    plugins: ['@typescript-eslint', 'eslint-plugin-n'],
     extends: [
         'plugin:@next/next/recommended',
         'plugin:@typescript-eslint/recommended-type-checked',
@@ -31,7 +31,13 @@ const config = {
             {
                 checksVoidReturn: { attributes: false }
             }
-        ]
+        ],
+
+        // In favor of type safety, the usage of `process.env` will throw an error.
+        // All references to `process.env` should be replaced with the `env` object created by
+        // the `@t3-oss/env-nextjs` package, which can be found at `src/env.js`.
+        // This ensures that the environment variables are properly validated and that the code is type-safe.
+        'n/no-process-env': 'error'
     }
 };
 

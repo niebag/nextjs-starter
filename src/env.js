@@ -1,3 +1,9 @@
+// In favor of type safety, the usage of `process.env` is disabled through the `no-process-env` rule with ESLint.
+// All references to `process.env` should be replaced with the `env` object created by the `@t3-oss/env-nextjs` package.
+// This ensures that the environment variables are properly validated and that the code is type-safe.
+// `no-process-env` is disabled in this file only to allow the usage of `process.env` for the `env` object creation.
+/* eslint-disable n/no-process-env */
+
 import { createEnv } from '@t3-oss/env-nextjs';
 import { z } from 'zod';
 
@@ -16,7 +22,11 @@ export const env = createEnv({
      * isn't built with invalid env vars.
      */
     server: {
-        NODE_ENV: z.enum(['development', 'test', 'production']).default('development')
+        NODE_ENV: z.enum(['development', 'test', 'production']).default('development'),
+        CI: z
+            .enum(['true', 'false'])
+            .transform((s) => s === 'true')
+            .default('false')
     },
 
     /**
@@ -28,7 +38,8 @@ export const env = createEnv({
         // NEXT_PUBLIC_CLIENT_VAR: process.env.NEXT_PUBLIC_CLIENT_VAR
 
         /* Server */
-        NODE_ENV: process.env.NODE_ENV
+        NODE_ENV: process.env.NODE_ENV,
+        CI: process.env.CI
     },
 
     /**
