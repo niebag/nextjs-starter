@@ -49,3 +49,6 @@ next-env.d.ts
 coverage/
 reports/
 .swc/
+
+#ide
+.idea/
